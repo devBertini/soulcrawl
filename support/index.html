@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#120E18">
+<title>Soulcrawl: Support</title>
+<meta name="description" content="Soulcrawl support and questions.">
+<style>
+:root{--bg:#120E18;--panel:#1C1624;--card:#271F31;--text:#F2ECF6;--muted:#B9AEC4;--gold:#FFD23F;--soul:#70F0E4;--line:rgba(255,210,63,.18)}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{color:var(--soul);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{background:linear-gradient(160deg,var(--panel),var(--bg));padding:48px 16px 40px}
+.wrap{max-width:760px;margin:0 auto;padding:0 4px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--gold);letter-spacing:.04em}
+.brand svg{width:28px;height:28px;color:var(--soul)}
+.hero h1{margin:18px 0 6px;font-size:28px;font-weight:800}
+.hero p{margin:0;color:var(--muted)}
+main{max-width:760px;margin:-22px auto 60px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px 20px 8px}
+@media (min-width:600px){main{padding:28px 28px 8px}}
+.toggle{display:flex;gap:8px;margin:0 0 18px}
+.toggle button{border:1px solid var(--line);background:transparent;color:var(--text);padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+.toggle button.active{background:var(--gold);color:#120E18;border-color:var(--gold);font-weight:700}
+h2{font-size:19px;margin:24px 0 8px;color:var(--gold)}
+.muted{color:var(--muted);font-size:14px}
+.badge{display:inline-block;background:rgba(112,240,228,.12);color:var(--soul);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:8px 0 20px}
+@media (min-width:600px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border-radius:14px;padding:14px 16px}
+.card h3{margin:0 0 4px;font-size:16px;color:var(--gold)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+ul{padding-left:20px}
+footer{max-width:760px;margin:0 auto 50px;padding:0 16px;color:var(--muted);font-size:13px;text-align:center}
+hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.lang[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2c1.5 3.2 5.5 6 5.5 11a5.5 5.5 0 0 1-11 0c0-2.6 1.3-4.1 2.4-5.4.3 1.6 1 2.6 2 3.1-.5-3.3.1-6 1.1-8.7Z" fill="currentColor"/></svg> Soulcrawl</div>
+    <h1>Support</h1>
+    <p>We read every message.</p>
+  </div>
+</header>
+<main>
+  <div class="toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-pt" onclick="setLang('pt')">Portugu&ecirc;s</button>
+  </div>
+  <section class="lang" id="lang-en">
+<h2>Contact</h2>
+<p>Write to <a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a> with your iPhone model and what happened. We answer in English or Portuguese.</p>
+<h2>Questions</h2>
+<p><strong>Where is my progress saved?</strong> On your iPhone only. It comes back with your device's iCloud or computer backup if you restore one.</p>
+<p><strong>I bought the Adventurer Pass on another device.</strong> Open the shop (the bag button at the top) and tap Restore.</p>
+<p><strong>How do ads work?</strong> Only when you choose: a boost button with the video icon plays a short ad and pays the boost when it ends. With the Adventurer Pass every boost comes at once, with no ad. Your consent choices are in Settings, Privacy choices, when they apply where you live.</p>
+<p><strong>What does Reincarnate keep?</strong> Souls, relics, goals, the Adventurer Pass and paid boosts. Gold, hero levels and the floor start over, and every soul you ever earned raises your damage.</p>
+<p><strong>I lost a boss.</strong> Keep fighting the floor's monsters to grow stronger, then tap Challenge boss, or turn on Auto.</p>
+<p><strong>How do reminders work?</strong> Turn on Reminders in Settings (the gear button). The game asks for permission once, and you can turn them off at any time.</p>
+<p><strong>How do I start over?</strong> Settings, New game. This erases the save on this device and cannot be undone.</p>
+  </section>
+  <section class="lang" id="lang-pt" hidden>
+<h2>Contato</h2>
+<p>Escreva para <a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a> com o modelo do seu iPhone e o que aconteceu. Respondemos em portugu&ecirc;s ou ingl&ecirc;s.</p>
+<h2>Perguntas</h2>
+<p><strong>Onde fica salvo o meu progresso?</strong> S&oacute; no seu iPhone. Ele volta com o backup do iCloud ou do computador, se voc&ecirc; restaurar um.</p>
+<p><strong>Comprei o Passe do Aventureiro em outro aparelho.</strong> Abra a loja (o bot&atilde;o da bolsa, no alto) e toque em Restaurar.</p>
+<p><strong>Como funcionam os an&uacute;ncios?</strong> S&oacute; quando voc&ecirc; escolhe: um bot&atilde;o de b&ocirc;nus com o &iacute;cone de v&iacute;deo mostra um an&uacute;ncio curto e paga o b&ocirc;nus quando ele termina. Com o Passe do Aventureiro todo b&ocirc;nus vem na hora, sem an&uacute;ncio. As suas escolhas de consentimento ficam em Ajustes, Op&ccedil;&otilde;es de privacidade, quando valem onde voc&ecirc; mora.</p>
+<p><strong>O que a Reencarna&ccedil;&atilde;o mant&eacute;m?</strong> Almas, rel&iacute;quias, metas, o Passe do Aventureiro e os b&ocirc;nus pagos. Ouro, n&iacute;veis dos her&oacute;is e o andar recome&ccedil;am, e toda alma que voc&ecirc; j&aacute; ganhou aumenta o seu dano.</p>
+<p><strong>Perdi para um chefe.</strong> Continue lutando com os monstros do andar para ficar mais forte e toque em Enfrentar chefe, ou ligue o Auto.</p>
+<p><strong>Como funcionam os lembretes?</strong> Ligue Lembretes em Ajustes (o bot&atilde;o de engrenagem). O jogo pede permiss&atilde;o uma vez, e voc&ecirc; pode desligar quando quiser.</p>
+<p><strong>Como come&ccedil;o de novo?</strong> Ajustes, Novo jogo. Isso apaga o save deste aparelho e n&atilde;o tem volta.</p>
+  </section>
+</main>
+<footer>&copy; 2026 Soulcrawl &middot; <a href="../">Home</a> &middot; <a href="../privacy/">Privacy</a> &middot; <a href="../support/">Support</a> &middot; <a href="../terms/">Terms</a></footer>
+<script>
+function setLang(l){
+  document.getElementById('lang-en').hidden=(l!=='en');
+  document.getElementById('lang-pt').hidden=(l!=='pt');
+  document.getElementById('btn-en').classList.toggle('active',l==='en');
+  document.getElementById('btn-pt').classList.toggle('active',l==='pt');
+  document.documentElement.lang=l==='pt'?'pt-BR':'en';
+}
+if((navigator.language||'').toLowerCase().startsWith('pt'))setLang('pt');
+</script>
+</body>
+</html>
